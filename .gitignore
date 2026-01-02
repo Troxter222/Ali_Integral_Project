@@ -1,0 +1,19 @@
+# Python internals
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Output files (We don't want to commit generated PDFs every time)
+output/*.png
+output/*.pdf
+
+# Keep the folder structure, but ignore content
+!output/.gitkeep
