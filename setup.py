@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='ali_integral',
-    version='0.3.0',
+    version='0.3.1',
     description='A Python library for calculating Information Flux at the Cauchy Horizon',
     long_description=long_description,
     long_description_content_type="text/markdown",
