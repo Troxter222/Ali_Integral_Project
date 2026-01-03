@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: ali-integral
+Version: 0.2.0
+Summary: A Python library for calculating Information Flux at the Cauchy Horizon
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# The Ali Integral: Observable Future Information (OFI)
+
+[![Physics](https://img.shields.io/badge/Physics-General%20Relativity-black)](https://en.wikipedia.org/wiki/General_relativity)
+[![Info Theory](https://img.shields.io/badge/Theory-Information-blue)](https://en.wikipedia.org/wiki/Information_theory)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-green)](https://www.python.org/)
+![Simulation](output/Vision_Theory_Simulation.gif)
+
+## 🌌 Abstract
+
+This project provides a computational implementation of **Vision Theory**, a framework unifying General Relativity and Quantum Information Theory. We introduce a new physical metric, **$I_{Ali}$ (The Ali Integral)**, which quantifies the maximum amount of information ("History of the Future") an observer can decode while falling towards the Cauchy Horizon of a Black Hole.
+
+The simulation resolves the infinite energy paradox by applying:
+1.  **Shannon-Hartley Theorem** with dynamic gravitational SNR.
+2.  **Lloyd Limit** for computational bounds.
+
+3.  **Thermal Destruction Criteria** (Backreaction/Crash).
+
+## 🚀 Features
+
+*   **Rigorous Physics**: Models gravitational blueshift ($g \propto 1/r$), quadratic energy flux ($F \propto g^2$), and dynamic bandwidth.
+*   **Comparison Engine**: Simulates infall for Stellar, Supermassive (Sgr A*), and Ultramassive (TON 618) Black Holes.
+*   **Scientific Output**: Automatically generates graphs and a fully formatted PDF research paper (MIT-style).
+
+## 📂 Project Structure
+
+*   `src/physics.py`: Core logic for Shannon Capacity and Integration.
+*   `src/plotting.py`: Matplotlib plotting engine for logarithmic scaling and LaTeX rendering.
+*   `src/config.py`: Centralized configuration for physical constants ($B_0$, $C_{limit}$, $F_{crit}$).
+*   `main.py`: Orchestrator script.
+
+## 🛠️ Installation & Usage
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/YourUsername/Ali-Integral-Project.git
+    cd Ali-Integral-Project
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the simulation:**
+    ```bash
+    python main.py
+    ```
+
+4.  **View Results:**
+    Check the `output/` folder for the generated PDF paper and high-resolution graphs.
+
+## 📊 The Ali Integral Formula
+
+The total Observable Future Information (OFI) is defined as:
+
+$$ I_{Ali} = \int_{0}^{\tau_{crash}} \min \left( B(\tau) \log_2(1 + SNR(\tau)), \ C_{Lloyd} \right) d\tau $$
+
+Where $C_{Lloyd}$ is the fundamental quantum limit of computation.
+
+---
+*Author: Ali* | *Version: 10.0 (Final Scientific Release)*

@@ -1,13 +1,13 @@
 import numpy as np
 from scipy.integrate import simpson
-from src.config import B0, SNR0, C_LIMIT, F_CRIT, HOLES, STEPS
+from ali_integral.config import B0, SNR0, C_LIMIT, F_CRIT, HOLES, STEPS
 
 def run_simulation():
     """
     Executes the 'Ali Integral' simulation.
     Calculates OFI (Observable Future Information) for different BH masses.
     """
-    print("[INFO] Running Physics Simulation (V10 Core)...")
+    print("[INFO] Running Physics Simulation (V11 Core)...")
     
     results = {}
 
@@ -67,3 +67,19 @@ def run_simulation():
         }
         
     return results
+
+BLACK_HOLES = {
+    "SgrA*": 4.1e6,
+    "M87*": 6.5e9,
+    "TON618": 6.6e10,
+    "CygnusX-1": 14.8,
+    "Sun": 1.0
+}
+
+def get_mass(mass_input):
+    if isinstance(mass_input, str):
+        if mass_input in BLACK_HOLES:
+            return BLACK_HOLES[mass_input]
+        else:
+            raise ValueError(f"Unknown Black Hole. Available: {list(BLACK_HOLES.keys())}")
+    return float(mass_input)
