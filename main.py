@@ -8,7 +8,7 @@ from ali_integral.visualizer_eht import generate_eht_animation
 from ali_integral.visualizer import create_animation
 
 def main():
-    print("--- Vision Theory Project (V11: The Movie) ---")
+    print("--- Vision Theory Project (V12: Thermodynamics & EHT) ---")
     
     # 1. Setup Resources
     font_path = download_font()
